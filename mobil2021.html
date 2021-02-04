@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../css/images/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iFood | Speakers</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  body .imgBg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://ozelproducciones.com/app-theming/mobil/FONDO-REGISTRO.JPG');
+  }
+
+  body .container {
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    flex-flow: column;
+  }
+
+  body .container .title {
+    width: 50%;
+    height: 50%;
+
+    margin: auto;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  body .container .title h1 {
+    margin: 10px auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 5vw;
+    color: #FFF;
+  }
+
+  body .container .title h2 {
+    margin: 10px auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    color: #FFF;
+  }
+
+  body .container .title h3 {
+    margin: 10px auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    color: #FFF;
+  }
+
+  body .container form {
+    width: 70%;
+    height: 10%;
+
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  body .container form h4 {
+    margin: 10px auto;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    color: #FFF;
+  }
+
+  body .container form .control {
+    margin: 10px auto;
+
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  body .container form .control input {
+    margin: 10px auto;
+
+    width: 40%;
+
+    margin: auto;
+    padding: 10px 20px;
+
+    border: none;
+    outline: none;
+    border-top-right-radius: 50em;
+
+    text-align: center;
+    font-size: 1.3vw;
+  }
+
+  body .container form .control input::placeholder {
+    color: #999;
+  }
+
+  body .container form .control input:focus {
+    border-bottom: 3px solid rgb(160, 20, 97);
+  }
+
+  body .container form .control button {
+    margin: auto;
+    padding: 10px 60px;
+
+    border: none;
+    outline: none;
+    border-top-right-radius: 50em;
+
+    background-color: rgb(0, 204, 255);
+
+    font-weight: 300;
+    font-size: 1.3vw;
+    color: #FFF;
+
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 640px){
+    body .container .title {
+      width: 90%;
+
+      margin: 30px auto;
+    }
+
+    body .container .title h1 {
+      margin: 5px auto;
+      font-size: 10vw;
+    }
+
+    body .container .title h2 {
+      margin: 5px auto;
+      font-size: 6.5vw;
+      color: #FFF;
+    }
+
+    body .container .title h3 {
+      margin: 5px auto;
+      font-size: 6vw;
+      color: #FFF;
+    }
+
+    body .container form {
+      width: 95%;
+    }
+
+    body .container form h4 {
+      font-size: 6vw;
+      color: #FFF;
+    }
+
+    body .container form .control input {
+      width: 70%;
+      font-size: 6.5vw;
+    }
+
+    body .container form .control button {
+      font-size: 7.5vw;
+    }
+  }
+
+
+</style>
+<body>
+  <div class="imgBg"></div>
+  <div class="container">
+    <div class="title">
+      <h1>Demo Mobil 2021</h1>
+      <h3>Bienvenido a:</h2>
+      <h2>Seminario industrial 2021</h2>
+    </div>
+    <form action="https://ozelproducciones.com/validando-acceso/" method="post">
+      <h4>Ingresa un nombre, así podremos identificarte mejor.</h4>
+      <div class="field has-addons has-addons-centered">
+          <div class="control"><input type="text" class="input has-margin-bottom-10" placeholder="Su nombre" name="ozelname" required=""></div>
+          <input type="hidden" name="logoutURL" value="https://www.mobil.com/en/lubricants/for-businesses/heavy-duty-lubricants" class="is-hidden">
+          <input type="hidden" name="welcome" value="Bienvenidos a Mobil 2021" class="is-hidden">
+          <input type="hidden" name="logo" value="" class="is-hidden">
+          <input type="hidden" name="customStyleUrl" value="https://ozelproducciones.com/app-theming/mobil/styles.css" class="is-hidden">
+          <input type="hidden" name="backgroundUrl" value="/app-theming/mobil/FONDO-LANDING.JPG" class="is-hidden">
+          <input type="hidden" name="ozelrole" value="ap" class="is-hidden">
+          <input type="hidden" name="ozelid" value="Mobil+2021" class="is-hidden">
+          <div class="control"><button type="submit" class="button is-warning has-text-weight-bold">Ingresar</button></div>
+      </div>
+    </form>
+  </div>
+
+<script src="http://ozelproducciones.com/app/themes/ozel/dist/scripts/vendor.js?id=e527045bcab45cda23c3"></script>
+<script src="http://ozelproducciones.com/app/themes/ozel/dist/scripts/app.js?id=b4a90cce39c7c303b47f"></script>
+</body>
+</html>
