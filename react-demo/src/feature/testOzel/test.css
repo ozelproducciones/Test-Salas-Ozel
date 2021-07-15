@@ -1,0 +1,17 @@
+.content {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+}
+
+.content .left {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+
+  background-color: aqua;
+  
+}
